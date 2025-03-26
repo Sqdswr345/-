@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جامعہ رسولیہ شیرازیہ رضویہ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="background-video">
+        <video autoplay muted loop playsinline id="bgVideo">
+            <source src="video/bg1.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="updates-container">
+                <div class="updates-slider">
+                    <div class="update-item active" data-update="1">
+                        <span class="update-date">23 مارچ 2025</span>
+                        <span class="update-text">نئے طالب علم کے لیے داخلے کی شروعات</span>
+                    </div>
+                    <div class="update-item" data-update="2">
+                        <span class="update-date">25 مارچ 2025</span>
+                        <span class="update-text">انٹر نیٹ فیسٹیول کی تیاریاں</span>
+                    </div>
+                    <div class="update-item" data-update="3">
+                        <span class="update-date">28 مارچ 2025</span>
+                        <span class="update-text">مرکزی لائبریری میں نئی کتب کا اضافہ</span>
+                    </div>
+                </div>
+                <button class="see-all-updates-btn">تمام اپڈیٹس دیکھیں <i class="fas fa-chevron-left"></i></button>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="جامعہ کا لوگو" class="logo-img">
+                <h1>جامعہ رسولیہ شیرازیہ رضویہ</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">ہوم</a></li>
+                <li><a href="about.html">تعارف</a></li>
+                <li><a href="admission.html">داخلہ</a></li>
+                <li><a href="#results">نتائج</a></li>
+                <li><a href="gallery.html">گیلری</a></li>
+                <li><a href="donate.html">عطیات</a></li>
+                <li><a href="#portal.html">طالب علم پورٹل</a></li>
+                <li><a href="contact.html">رابطہ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>جامعہ رسولیہ شیرازیہ رضویہ</h1>
+                <p>علم و عرفان کی روشنی پھیلاتے ہوئے</p>
+                <div class="hero-buttons">
+                    <a href="#admission" class="cta-button primary">ہمارے ساتھ شامل ہوں <i class="fas fa-arrow-left"></i></a>
+                    <a href="#online" class="cta-button secondary">آن لائن تعلیم <i class="fas fa-laptop"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="explore" class="explore-section">
+            <div class="container">
+                <h2>ہمارے جامعہ کی سیر</h2>
+                <div class="explore-grid">
+                    <div class="explore-card">
+                        <div class="explore-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>داخلہ</h3>
+                        <p>نئے طلبہ کے لیے داخلے کی معلومات</p>
+                        <a href="#admission" class="explore-link">داخلہ فارم <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                    <div class="explore-card">
+                        <div class="explore-icon">
+                            <i class="fas fa-images"></i>
+                        </div>
+                        <h3>گیلری</h3>
+                        <p>جامعہ کی سرگرمیوں کی تصاویر</p>
+                        <a href="gallery.html" class="explore-link">گیلری دیکھیں <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                    <div class="explore-card">
+                        <div class="explore-icon">
+                            <i class="fas fa-poll"></i>
+                        </div>
+                        <h3>نتائج</h3>
+                        <p>آن لائن نتائج کی تفصیلات</p>
+                        <a href="#results" class="explore-link">نتائج دیکھیں <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+               
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="img/as1.webp" alt="کیمپس کا منظر" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>جامعہ کا کیمپس</h3>
+                            <p>جدید سہولیات سے آراستہ</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/as2.webp" alt="لائبریری" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>مرکزی لائبریری</h3>
+                            <p>علمی کتب کا خزانہ</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/as3.webp" alt="کلاس روم" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>جدید کلاس رومز</h3>
+                            <p>تعلیمی سرگرمیاں</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>رابطہ معلومات</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> پتہ: جامعہ رسولیہ شیرازیہ رضویہ</p>
+                    <p><i class="fas fa-phone"></i> فون: +92 300 4069046</p>
+                    <p><i class="fas fa-envelope"></i> ای میل: info@jamia.edu</p>
+                </div>
+                <div class="footer-section">
+                    <h3>فوری روابط</h3>
+                    <ul>
+                        <li><a href="#admission">داخلہ</a></li>
+                        <li><a href="#results">نتائج</a></li>
+                        <li><a href="donate.html">عطیات</a></li>
+                        <li><a href="contact.html">رابطہ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>سوشل میڈیا</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 جامعہ رسولیہ شیرازیہ رضویہ - جملہ حقوق محفوظ ہیں</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/+923004069046" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip">ہم سے رابطہ کریں</span>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
