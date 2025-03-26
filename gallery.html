@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>گیلری - جامعہ رسولیہ شیرازیہ رضویہ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <div class="background-video">
+        <video autoplay muted loop playsinline id="bgVideo">
+            <source src="video/bg1.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="ur">اردو</button>
+                <button class="lang-btn" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="ar">عربي</button>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="جامعہ کا لوگو" class="logo-img">
+                <h1>جامعہ رسولیہ شیرازیہ رضویہ</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">ہوم</a></li>
+                <li><a href="about.html">تعارف</a></li>
+                <li><a href="admission.html">داخلہ</a></li>
+                <li><a href="#results">نتائج</a></li>
+                <li><a href="gallery.html" class="active">گیلری</a></li>
+                <li><a href="donate.html">عطیات</a></li>
+                <li><a href="#portal.html">طالب علم پورٹل</a></li>
+                <li><a href="contact.html">رابطہ</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="gallery-page">
+        <section class="gallery-hero">
+            <div class="container">
+                <h2>تصویری گیلری</h2>
+                <p>جامعہ رسولیہ شیرازیہ رضویہ کی یادگار تصاویر</p>
+            </div>
+        </section>
+
+        <section class="gallery-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">تمام تصاویر</button>
+                    <button class="filter-btn" data-filter="events">تقریبات</button>
+                    <button class="filter-btn" data-filter="classroom">کلاس روم</button>
+                    <button class="filter-btn" data-filter="library">لائبریری</button>
+                    <button class="filter-btn" data-filter="mosque">مسجد</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-grid">
+            <div class="container">
+                <div class="gallery-items">
+                    <!-- Events Images -->
+                    <div class="gallery-item" data-category="events">
+                        <img src="img/as3.webp" alt="تقریب کی تصویر">
+                        <div class="item-overlay">
+                            <h3>سالانہ تقریب</h3>
+                            <p>سالانہ تقریب تقسیم اسناد</p>
+                            <a href="img/as3.webp" class="download-btn" download>
+                                <i class="fas fa-download"></i> ڈاؤن لوڈ
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="events">
+                        <img src="img/as3.webp" alt="سیمینار کی تصویر">
+                        <div class="item-overlay">
+                            <h3>علمی سیمینار</h3>
+                            <p>علمی و تحقیقی سیمینار</p>
+                            <a href="img/as4.webp" class="download-btn" download>
+                                <i class="fas fa-download"></i> ڈاؤن لوڈ
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Classroom Images -->
+                    <div class="gallery-item" data-category="classroom">
+                        <img src="img/gallery/class1.jg" alt="کلاس روم کی تصویر">
+                        <div class="item-overlay">
+                            <h3>کلاس روم</h3>
+                            <p>جدید کلاس روم کا منظر</p>
+                            <a href="img/gallery/class1.jpg" class="download-btn" download>
+                                <i class="fas fa-download"></i> ڈاؤن لوڈ
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="classroom">
+                        <img src="img/gallery/class2.jpg" alt="تدریسی عمل">
+                        <div class="item-overlay">
+                            <h3>تدریسی عمل</h3>
+                            <p>طلبہ کی تعلیم و تربیت</p>
+                            <a href="img/gallery/class2.jpg" class="download-btn" download>
+                                <i class="fas fa-download"></i> ڈاؤن لوڈ
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Library Images -->
+                    <div class="gallery-item" data-category="library">
+                        <img src="img/gallery/library1.jpg" alt="لائبریری کی تصویر">
+                        <div class="item-overlay">
+                            <h3>مرکزی لائبریری</h3>
+                            <p>کتب خانہ کا اندرونی منظر</p>
+                            <a href="img/gallery/library1.jpg" class="download-btn" download>
+                                <i class="fas fa-download"></i> ڈاؤن لوڈ
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="library">
+                        <img src="img/gallery/library2.jpg" alt="مطالعہ ہال">
+                        <div class="item-overlay">
+                            <h3>مطالعہ ہال</h3>
+                            <p>طلبہ کے لیے مطالعہ کی جگہ</p>
+                            <a href="img/gallery/library2.jpg" class="download-btn" download>
+                                <i class="fas fa-download"></i> ڈاؤن لوڈ
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Mosque Images -->
+                    <div class="gallery-item" data-category="mosque">
+                        <img src="img/gallery/mosque1.jpg" alt="مسجد کی تصویر">
+                        <div class="item-overlay">
+                            <h3>جامع مسجد</h3>
+                            <p>جامعہ کی مرکزی مسجد</p>
+                            <a href="img/gallery/mosque1.jpg" class="download-btn" download>
+                                <i class="fas fa-download"></i> ڈاؤن لوڈ
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="mosque">
+                        <img src="img/gallery/mosque2.jpg" alt="مسجد کا اندرونی منظر">
+                        <div class="item-overlay">
+                            <h3>مسجد کا اندرونی حصہ</h3>
+                            <p>نماز کی ادائیگی کا مقام</p>
+                            <a href="img/gallery/mosque2.jpg" class="download-btn" download>
+                                <i class="fas fa-download"></i> ڈاؤن لوڈ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>رابطہ کریں</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> پتہ: جامعہ رسولیہ شیرازیہ رضویہ</p>
+                    <p><i class="fas fa-phone"></i> فون: xxxxxxxx</p>
+                    <p><i class="fas fa-envelope"></i> ای میل: info@jamiarasoolia.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 جامعہ رسولیہ شیرازیہ رضویہ - جملہ حقوق محفوظ ہیں</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
