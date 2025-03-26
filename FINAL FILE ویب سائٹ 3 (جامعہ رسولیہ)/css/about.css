@@ -1,0 +1,198 @@
+/* About Page Styles */
+.about-page {
+    padding-top: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.about-hero {
+    text-align: center;
+    padding: 4rem 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    margin-bottom: 3rem;
+}
+
+.about-hero h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.about-hero p {
+    font-size: 1.5rem;
+    color: #e2e8f0;
+}
+
+/* Mosque Virtues Section */
+.mosque-virtues {
+    padding: 4rem 0;
+}
+
+.mosque-virtues h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.virtues-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.virtue-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.virtue-card:hover {
+    transform: translateY(-5px);
+}
+
+.virtue-card i {
+    font-size: 3rem;
+    color: #4CAF50;
+    margin-bottom: 1.5rem;
+}
+
+.virtue-card h4 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.virtue-card p {
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+/* History Timeline Section */
+.history-timeline {
+    padding: 4rem 0;
+}
+
+.history-timeline h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: #4CAF50;
+    top: 0;
+    bottom: 0;
+    right: calc(50% - 2px);
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: flex-start;
+    padding: 2rem 0;
+    width: 50%;
+    margin-right: 50%;
+}
+
+.timeline-item:nth-child(even) {
+    margin-right: 0;
+    margin-left: 50%;
+    justify-content: flex-end;
+}
+
+.timeline-item .content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 10px;
+    position: relative;
+    width: 80%;
+}
+
+.timeline-item .year {
+    position: absolute;
+    right: -90px;
+    background: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.timeline-item:nth-child(even) .year {
+    right: auto;
+    left: -90px;
+}
+
+.timeline-item .content h4 {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-item .content p {
+    color: #e2e8f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline::before {
+        right: 30px;
+    }
+
+    .timeline-item,
+    .timeline-item:nth-child(even) {
+        width: 100%;
+        margin: 0;
+        padding-right: 80px;
+    }
+
+    .timeline-item .year,
+    .timeline-item:nth-child(even) .year {
+        right: -5px;
+        left: auto;
+        font-size: 0.9rem;
+        padding: 0.3rem 0.8rem;
+    }
+
+    .timeline-item .content {
+        width: 100%;
+    }
+
+    .virtues-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .about-hero h2 {
+        font-size: 2rem;
+    }
+
+    .about-hero p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}

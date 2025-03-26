@@ -1,0 +1,12 @@
+This directory contains website images:
+
+1. hero-bg.jpg - Main background image
+2. gallery-1.jpg - Mosque interior
+3. gallery-2.jpg - Students studying
+4. gallery-3.jpg - Library
+5. gallery-4.jpg - Prayer hall
+6. gallery-5.jpg - Campus view
+7. gallery-6.jpg - Islamic calligraphy
+8. about-img.jpg - About section image
+9. islamic-pattern.png - Decorative pattern
+10. faculty-1.jpg to faculty-3.jpg - Faculty member photos

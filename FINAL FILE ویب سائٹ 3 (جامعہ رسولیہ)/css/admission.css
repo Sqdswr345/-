@@ -1,0 +1,249 @@
+/* Admission Page Styles */
+
+/* Admission Hero Section */
+.admission-hero {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 4rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.admission-hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.admission-hero p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* Admission Form Section */
+.admission-form-section {
+    padding: 4rem 0;
+    background: var(--light-bg);
+}
+
+.admission-form-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.admission-form {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(241, 196, 15, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.signature-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.signature-box {
+    border: 2px dashed #ddd;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.signature-box:hover {
+    border-color: var(--accent-color);
+}
+
+.submit-btn {
+    background: var(--accent-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.submit-btn:hover {
+    background: #e0a800;
+    transform: translateY(-2px);
+}
+
+/* Important Rules Section */
+.important-rules {
+    padding: 4rem 0;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.important-rules h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--accent-color);
+}
+
+.rules-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.rule-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+}
+
+.rule-item i {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+.rule-item p {
+    margin: 0;
+}
+
+/* Download Section */
+.download-section {
+    padding: 4rem 0;
+    background: #fff;
+    text-align: center;
+}
+
+.download-section h3 {
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--border-radius);
+    background: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.download-btn:hover {
+    background: #34495e;
+    transform: translateY(-2px);
+}
+
+.download-btn i {
+    font-size: 1.2rem;
+}
+
+/* Notification Styles */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.notification.error {
+    background-color: #f44336;
+}
+
+.notification.hide {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.notification i {
+    font-size: 20px;
+}
+
+.notification span {
+    font-size: 16px;
+    font-family: 'Noto Nastaliq Urdu', serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admission-form-container {
+        padding: 1rem;
+    }
+
+    .signature-section {
+        grid-template-columns: 1fr;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .admission-hero h2 {
+        font-size: 2rem;
+    }
+
+    .admission-form {
+        gap: 1rem;
+    }
+}

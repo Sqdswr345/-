@@ -1,0 +1,118 @@
+/* Welcome Page Styles */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: white;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#bgVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.welcome-container {
+    position: relative;
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+    background: rgba(0, 195, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+}
+
+.urdu-welcome {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    color: #fffefe;
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+}
+
+.continue-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    background-color: #00d9ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.continue-button:hover {
+    background-color: #50a10d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .welcome-container {
+        padding: 1.5rem;
+        width: 95%;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .continue-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome-container {
+        padding: 1rem;
+        width: 98%;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .urdu-welcome {
+        font-size: 1.2rem;
+    }
+}
